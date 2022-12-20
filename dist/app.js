@@ -4,12 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const server_1 = __importDefault(require("./models/server"));
-const textMessage_1 = __importDefault(require("./models/textMessage"));
 const server = new server_1.default();
 // const chat = new Chat(true, 'jose', 'martinez', {}) 
-const chat = new textMessage_1.default(new Date(Date.now()), true);
-let agregarM = chat.addText('hola quiero hacerles una pregunta');
-console.log(agregarM);
+// const chat = new TextMessage( new Date( Date.now()), true)
+// let agregarM = chat.addText('hola quiero hacerles una pregunta')
+// console.log( agregarM )
 server.listen();
 // const chat = {
 //     id: 'id del chat',

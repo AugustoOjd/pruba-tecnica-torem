@@ -5,12 +5,13 @@ import TextMessage from './models/textMessage'
 const server = new Server()
 // const chat = new Chat(true, 'jose', 'martinez', {}) 
 
-const chat = new TextMessage( new Date( Date.now()), true)
-let agregarM = chat.addText('hola quiero hacerles una pregunta')
+// const chat = new TextMessage( new Date( Date.now()), true)
+// let agregarM = chat.addText('hola quiero hacerles una pregunta')
 
 
-console.log( agregarM )
+// console.log( agregarM )
 server.listen()
+
 
 // const chat = {
 //     id: 'id del chat',

@@ -10,18 +10,17 @@ export default class TextMessage extends Message {
     }
 
 
-    addText(text: string){
+    addText(text: string, id: string){
         this.#text = text
         
         let body = {
+            id,
             text,
             timestamp:      super.showTimestamp(),
             isReceived:     super.showStatus()
         }
 
         return body
-
-
     }
 
 

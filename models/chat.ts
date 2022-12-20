@@ -1,10 +1,11 @@
 import Customer from './customer'
+import Message from './massage'
 
-export default class Chat extends Customer {
+export default class Chat extends Message{
     #isFavourite: boolean
 
-    constructor(isFavourite: boolean, firstName: string, lastName: string, customer: Object){
-        super(firstName,lastName, customer)
+    constructor(isFavourite: boolean, timestamp: Date, isReceived: boolean){
+        super(timestamp, isReceived)
         this.#isFavourite = isFavourite
     }
 

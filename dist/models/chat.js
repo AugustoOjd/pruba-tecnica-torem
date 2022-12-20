@@ -10,10 +10,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 var _Chat_isFavourite;
 Object.defineProperty(exports, "__esModule", { value: true });
-const customer_1 = __importDefault(require("./customer"));
-class Chat extends customer_1.default {
-    constructor(isFavourite, firstName, lastName, customer) {
-        super(firstName, lastName, customer);
+const massage_1 = __importDefault(require("./massage"));
+class Chat extends massage_1.default {
+    constructor(isFavourite, timestamp, isReceived) {
+        super(timestamp, isReceived);
         _Chat_isFavourite.set(this, void 0);
         __classPrivateFieldSet(this, _Chat_isFavourite, isFavourite, "f");
     }

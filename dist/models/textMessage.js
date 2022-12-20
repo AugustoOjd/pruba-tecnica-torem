@@ -17,9 +17,10 @@ class TextMessage extends massage_1.default {
         _TextMessage_text.set(this, void 0);
         __classPrivateFieldSet(this, _TextMessage_text, '', "f");
     }
-    addText(text) {
+    addText(text, id) {
         __classPrivateFieldSet(this, _TextMessage_text, text, "f");
         let body = {
+            id,
             text,
             timestamp: super.showTimestamp(),
             isReceived: super.showStatus()
